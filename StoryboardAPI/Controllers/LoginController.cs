@@ -78,7 +78,7 @@ namespace StoryboardAPI.Controllers
                     if (newobj.access_token != null)
                     {
                         tokenvalue = "Bearer " + newobj.access_token;
-                        msSQL = "call adm_mst_spstoretoken('" + tokenvalue + "','" + values.user_code + "','" + objcmnfunctions.ConvertToAscii(values.user_password) + "','" + values.company_code + "')";
+                        msSQL = "call storyboard.adm_mst_spstoretoken('" + tokenvalue + "','" + values.user_code + "','" + objcmnfunctions.ConvertToAscii(values.user_password) + "','" + values.company_code + "')";
                         objMySqlDataReader = objdbconn.GetDataReader(msSQL);
 
                         if (objMySqlDataReader.HasRows)
