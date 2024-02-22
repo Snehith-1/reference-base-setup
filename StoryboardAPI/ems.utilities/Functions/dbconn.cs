@@ -37,7 +37,7 @@ namespace ems.utilities.Functions
                         using (OdbcCommand cmd = new OdbcCommand())
                         {
                             cmd.CommandType = CommandType.Text;
-                            cmd.CommandText = "CALL adm_mst_spgetconnectionstring('" + HttpContext.Current.Request.Headers["Authorization"].ToString() + "')";
+                            cmd.CommandText = "CALL  storyboard.adm_mst_spgetconnectionstring('" + HttpContext.Current.Request.Headers["Authorization"].ToString() + "')";
                             cmd.Connection = conn;
                             conn.Open();
                             lsConnectionString = cmd.ExecuteScalar().ToString();
