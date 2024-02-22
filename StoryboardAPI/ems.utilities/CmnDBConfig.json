@@ -1,0 +1,22 @@
+[
+  {
+    "company_code": "samunnati",
+    "company_dbname": "samunnati"
+  },
+  {
+    "company_code": "nbfc",
+    "company_dbname": "nbfc"
+  },
+  {
+    "company_code": "nbfc_demo",
+    "company_dbname": "sbfc"
+  },
+  {
+    "company_code": "vcidex",
+    "company_dbname": "vcidex_angular"
+  },
+  {
+    "company_code": "boba",
+    "company_dbname": "boba_tea"
+  }
+]
